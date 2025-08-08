@@ -11,7 +11,8 @@ const temNumeroMaiorDoQue10 = numeros.some((numero) => {
   }
 });
 
-// Método .ever
+// Método .every() verifica se todos os item do array
+// caso passe em um teste Retornan True
 const todosOsNumeroSãoMaiorQue10 = numeros.every((numero) => {
   if (numero > 10) {
     return true;
