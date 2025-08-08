@@ -21,5 +21,32 @@ const todosOsNumeroSãoMaiorQue10 = numeros.every((numero) => {
   }
 });
 
-console.log(temNumeroMaiorDoQue10); // True
-console.log(todosOsNumeroSãoMaiorQue10); // False
+const NumerosPar = numeros.some((numero) => {
+  if (numero % 2 === 0) {
+    return true;
+  } else {
+    false;
+  }
+}, []);
+
+const pessoas = [
+  {
+    nome: "Ragnar Lothbrok",
+    idade: 30,
+  },
+  {
+    nome: "Harvey Specter",
+    idade: 41,
+  },
+  {
+    nome: "John Doe",
+    idade: 12,
+  },
+];
+
+const maiorDeIdade = pessoas.some((pessoa) => pessoa.idade > 18);
+
+// console.log(temNumeroMaiorDoQue10); // True
+// console.log(todosOsNumeroSãoMaiorQue10); // False
+// console.log(NumerosPar);
+console.log(maiorDeIdade);
