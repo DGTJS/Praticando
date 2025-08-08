@@ -46,7 +46,40 @@ const pessoas = [
 
 const maiorDeIdade = pessoas.some((pessoa) => pessoa.idade > 18);
 
+// Verificação se todos os valores da lista "numeros2" é par
+
+const numeros2 = [1, 2, 3, 4, 5, 6];
+
+const numerosPar2 = numeros2.every((numero) => {
+  if (numero % 2 === 0) {
+    return true;
+  } else {
+    false;
+  }
+});
+
+const listaDeDesejos = [
+  {
+    titulo: "Tesla Model S",
+    quantidadeEstoque: 0,
+  },
+  {
+    titulo: "MacBook Pro",
+    quantidadeEstoque: 10,
+  },
+  {
+    titulo: "Carro de Fórmula 1",
+    quantidadeEstoque: 1,
+  },
+];
+
+const TodosEstãoEmEstoque = listaDeDesejos.every(
+  (desejos) => desejos.quantidadeEstoque > 1
+);
+
 // console.log(temNumeroMaiorDoQue10); // True
 // console.log(todosOsNumeroSãoMaiorQue10); // False
 // console.log(NumerosPar);
-console.log(maiorDeIdade);
+// console.log(maiorDeIdade);
+// console.log(numerosPar2);
+console.log(TodosEstãoEmEstoque);
